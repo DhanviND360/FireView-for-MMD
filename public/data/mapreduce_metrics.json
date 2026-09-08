@@ -1,0 +1,71 @@
+{
+  "concept": "MapReduce Parallel Spatio-Temporal Aggregation of Satellite Stream",
+  "key_design": "(Grid_0.5_ID, Acq_Month)",
+  "value_design": "(count: 1, frp: float, max_frp: float, bright_ti4: float)",
+  "associative_reduction": "Total_Count = \u03a3(count), Avg_FRP = \u03a3(frp)/\u03a3(count), Max_FRP = max(frp)",
+  "pipeline_stages": [
+    {
+      "stage": "Input Ingestion & Chunking",
+      "description": "Divide 4.8M satellite detection stream into 16 balanced 64MB HDFS/S3 data splits",
+      "input_records": 4812490,
+      "output_chunks": 16,
+      "execution_time_ms": 142.0
+    },
+    {
+      "stage": "Map Phase (16 Parallel Mappers)",
+      "description": "Extract Spatio-Temporal key: (0.5\u00b0 Grid_ID, Acq_Month) and emit intermediate key-value tuples: (count=1, frp, max_frp, bright_ti4)",
+      "emitted_intermediate_pairs": 4812490,
+      "execution_time_ms": 620.0
+    },
+    {
+      "stage": "Shuffle & Sort Phase",
+      "description": "Hash-partition intermediate keys across 8 Reducer workers with local combiner aggregation",
+      "network_transfer_mb": 42.8,
+      "combiner_compression_ratio": "8.4 : 1",
+      "execution_time_ms": 380.0
+    },
+    {
+      "stage": "Reduce Phase (8 Reducer Workers)",
+      "description": "Compute associative reductions: sum(count), avg(frp) = sum(frp)/sum(count), max(frp), and total thermal energy (PJ)",
+      "reduced_spatio_temporal_cells": 1840,
+      "execution_time_ms": 268.0
+    }
+  ],
+  "scalability_benchmarks": [
+    {
+      "mode": "Single-Thread Sequential Iteration",
+      "workers": 1,
+      "time_seconds": 18.42,
+      "speedup": 1.0,
+      "efficiency_pct": 100.0
+    },
+    {
+      "mode": "Distributed MapReduce (2 Mappers / Reducers)",
+      "workers": 2,
+      "time_seconds": 9.65,
+      "speedup": 1.91,
+      "efficiency_pct": 95.5
+    },
+    {
+      "mode": "Distributed MapReduce (4 Mappers / Reducers)",
+      "workers": 4,
+      "time_seconds": 5.14,
+      "speedup": 3.58,
+      "efficiency_pct": 89.5
+    },
+    {
+      "mode": "Distributed MapReduce (8 Mappers / Reducers)",
+      "workers": 8,
+      "time_seconds": 2.78,
+      "speedup": 6.63,
+      "efficiency_pct": 82.9
+    },
+    {
+      "mode": "Distributed MapReduce (16 Mappers / Reducers)",
+      "workers": 16,
+      "time_seconds": 1.41,
+      "speedup": 13.06,
+      "efficiency_pct": 81.6
+    }
+  ]
+}

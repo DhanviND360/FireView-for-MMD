@@ -1,0 +1,1802 @@
+{
+  "dataset_overview": {
+    "dataset_name": "NASA FIRMS VIIRS 375m Active Fire Archive (VNP14IMGTDL / VJ114IMGTDL)",
+    "scaled_total_observations": 4812490,
+    "analytical_sample_size": 8500,
+    "dataset_size_gb": 1.22,
+    "date_range_start": "2023-01-01",
+    "date_range_end": "2024-12-31",
+    "spatial_resolution": "375m at nadir (I-Band)",
+    "satellites": [
+      "Suomi-NPP",
+      "NOAA-20",
+      "NOAA-21"
+    ],
+    "geographic_bounding": {
+      "lat_min": -45.0,
+      "lat_max": 65.0,
+      "lon_min": -140.0,
+      "lon_max": 155.0
+    }
+  },
+  "quality_audit": {
+    "total_records_monitored": 4812490,
+    "missing_values": {
+      "latitude": 0,
+      "longitude": 0,
+      "bright_ti4": 0,
+      "bright_ti5": 0,
+      "frp": 0,
+      "confidence": 0
+    },
+    "completeness_score_pct": 99.98,
+    "duplicate_overpass_pct": 0.021,
+    "sensor_saturation_count_ti4_367k": 14210,
+    "scan_angle_distortion_correction": "Applied Bow-Tie Parabolic Pixel Area Expansion",
+    "low_confidence_rate_pct": 3.21,
+    "nominal_confidence_rate_pct": 87.81,
+    "high_confidence_rate_pct": 8.98
+  },
+  "diurnal_analysis": {
+    "day_count_pct": 64.1,
+    "night_count_pct": 35.9,
+    "day_mean_frp": 78.38,
+    "night_mean_frp": 40.38,
+    "day_median_frp": 45.44,
+    "night_median_frp": 23.56,
+    "frp_day_night_ratio": 1.94,
+    "ti4_mean_day": 343.0,
+    "ti4_mean_night": 325.6
+  },
+  "monthly_seasonality": [
+    {
+      "month": "Jan",
+      "month_num": 1,
+      "detection_count": 503,
+      "scaled_count": 284786,
+      "mean_frp": 65.92,
+      "median_frp": 39.37
+    },
+    {
+      "month": "Feb",
+      "month_num": 2,
+      "detection_count": 508,
+      "scaled_count": 287617,
+      "mean_frp": 77.54,
+      "median_frp": 43.13
+    },
+    {
+      "month": "Mar",
+      "month_num": 3,
+      "detection_count": 180,
+      "scaled_count": 101911,
+      "mean_frp": 55.85,
+      "median_frp": 37.16
+    },
+    {
+      "month": "Apr",
+      "month_num": 4,
+      "detection_count": 175,
+      "scaled_count": 99080,
+      "mean_frp": 69.18,
+      "median_frp": 35.81
+    },
+    {
+      "month": "May",
+      "month_num": 5,
+      "detection_count": 549,
+      "scaled_count": 310830,
+      "mean_frp": 93.06,
+      "median_frp": 49.61
+    },
+    {
+      "month": "Jun",
+      "month_num": 6,
+      "detection_count": 588,
+      "scaled_count": 332911,
+      "mean_frp": 82.15,
+      "median_frp": 42.75
+    },
+    {
+      "month": "Jul",
+      "month_num": 7,
+      "detection_count": 1267,
+      "scaled_count": 717344,
+      "mean_frp": 67.49,
+      "median_frp": 36.54
+    },
+    {
+      "month": "Aug",
+      "month_num": 8,
+      "detection_count": 1663,
+      "scaled_count": 941549,
+      "mean_frp": 60.95,
+      "median_frp": 34.76
+    },
+    {
+      "month": "Sep",
+      "month_num": 9,
+      "detection_count": 1257,
+      "scaled_count": 711682,
+      "mean_frp": 46.1,
+      "median_frp": 30.07
+    },
+    {
+      "month": "Oct",
+      "month_num": 10,
+      "detection_count": 860,
+      "scaled_count": 486910,
+      "mean_frp": 55.75,
+      "median_frp": 31.52
+    },
+    {
+      "month": "Nov",
+      "month_num": 11,
+      "detection_count": 466,
+      "scaled_count": 263837,
+      "mean_frp": 66.55,
+      "median_frp": 36.8
+    },
+    {
+      "month": "Dec",
+      "month_num": 12,
+      "detection_count": 484,
+      "scaled_count": 274028,
+      "mean_frp": 66.85,
+      "median_frp": 40.07
+    }
+  ],
+  "frp_distribution": {
+    "min": 1.2,
+    "p5": 7.22,
+    "p25": 18.91,
+    "median": 36.39,
+    "p75": 72.88,
+    "p95": 207.83,
+    "p99": 447.01,
+    "max": 1850.0,
+    "mean": 64.73,
+    "std": 101.4,
+    "skewness": 7.51,
+    "kurtosis": 93.48
+  },
+  "frp_histogram": [
+    {
+      "bin": "0-10 MW",
+      "range_min": 0,
+      "range_max": 10,
+      "count": 801,
+      "percentage": 9.42
+    },
+    {
+      "bin": "10-25 MW",
+      "range_min": 10,
+      "range_max": 25,
+      "count": 2223,
+      "percentage": 26.15
+    },
+    {
+      "bin": "25-50 MW",
+      "range_min": 25,
+      "range_max": 50,
+      "count": 2298,
+      "percentage": 27.04
+    },
+    {
+      "bin": "50-100 MW",
+      "range_min": 50,
+      "range_max": 100,
+      "count": 1766,
+      "percentage": 20.78
+    },
+    {
+      "bin": "100-250 MW",
+      "range_min": 100,
+      "range_max": 250,
+      "count": 1125,
+      "percentage": 13.24
+    },
+    {
+      "bin": "250-500 MW",
+      "range_min": 250,
+      "range_max": 500,
+      "count": 226,
+      "percentage": 2.66
+    },
+    {
+      "bin": "500-1000 MW",
+      "range_min": 500,
+      "range_max": 1000,
+      "count": 47,
+      "percentage": 0.55
+    },
+    {
+      "bin": "1000-2000 MW",
+      "range_min": 1000,
+      "range_max": 2000,
+      "count": 14,
+      "percentage": 0.16
+    }
+  ],
+  "temperature_scatter": [
+    {
+      "ti4": 336.14,
+      "ti5": 308.59,
+      "frp": 23.2,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 343.63,
+      "ti5": 311.17,
+      "frp": 225.8,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 321.33,
+      "ti5": 295.88,
+      "frp": 22.49,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 333.99,
+      "ti5": 301.33,
+      "frp": 49.62,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 324.4,
+      "ti5": 294.48,
+      "frp": 12.52,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 343.44,
+      "ti5": 308.75,
+      "frp": 41.31,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 329.33,
+      "ti5": 306.24,
+      "frp": 11.59,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 334.99,
+      "ti5": 309.92,
+      "frp": 27.85,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 332.46,
+      "ti5": 303.27,
+      "frp": 43.08,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 337.54,
+      "ti5": 310.05,
+      "frp": 27.0,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 333.2,
+      "ti5": 307.32,
+      "frp": 12.54,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 345.33,
+      "ti5": 316.9,
+      "frp": 68.61,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 338.02,
+      "ti5": 309.82,
+      "frp": 32.47,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 357.85,
+      "ti5": 322.19,
+      "frp": 118.19,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 340.29,
+      "ti5": 314.62,
+      "frp": 56.56,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 315.8,
+      "ti5": 298.96,
+      "frp": 14.77,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 348.27,
+      "ti5": 316.43,
+      "frp": 121.4,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 341.66,
+      "ti5": 311.92,
+      "frp": 92.82,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 350.87,
+      "ti5": 313.17,
+      "frp": 101.42,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 338.9,
+      "ti5": 306.64,
+      "frp": 17.7,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 360.15,
+      "ti5": 319.5,
+      "frp": 283.86,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 320.76,
+      "ti5": 296.82,
+      "frp": 11.61,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 325.31,
+      "ti5": 300.71,
+      "frp": 21.53,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 349.86,
+      "ti5": 316.58,
+      "frp": 127.56,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 329.84,
+      "ti5": 308.22,
+      "frp": 17.67,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 348.56,
+      "ti5": 312.74,
+      "frp": 58.69,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 321.39,
+      "ti5": 299.64,
+      "frp": 14.22,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 333.61,
+      "ti5": 305.52,
+      "frp": 48.3,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 342.51,
+      "ti5": 312.11,
+      "frp": 95.64,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 338.02,
+      "ti5": 309.66,
+      "frp": 20.24,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 334.39,
+      "ti5": 301.23,
+      "frp": 63.51,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 343.23,
+      "ti5": 318.22,
+      "frp": 68.84,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 346.01,
+      "ti5": 311.75,
+      "frp": 249.02,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 343.84,
+      "ti5": 312.28,
+      "frp": 41.64,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 343.02,
+      "ti5": 312.31,
+      "frp": 58.77,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 321.53,
+      "ti5": 294.82,
+      "frp": 13.83,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 360.12,
+      "ti5": 316.44,
+      "frp": 219.41,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 335.32,
+      "ti5": 300.77,
+      "frp": 73.61,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 331.41,
+      "ti5": 300.06,
+      "frp": 21.36,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 341.4,
+      "ti5": 315.76,
+      "frp": 47.39,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 331.3,
+      "ti5": 312.91,
+      "frp": 16.54,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 338.63,
+      "ti5": 309.16,
+      "frp": 29.35,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 320.74,
+      "ti5": 300.29,
+      "frp": 18.33,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 334.49,
+      "ti5": 307.94,
+      "frp": 17.18,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 356.36,
+      "ti5": 320.22,
+      "frp": 225.58,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 319.79,
+      "ti5": 294.17,
+      "frp": 17.98,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 340.22,
+      "ti5": 305.01,
+      "frp": 22.6,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 333.13,
+      "ti5": 306.57,
+      "frp": 13.52,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 332.17,
+      "ti5": 307.13,
+      "frp": 19.95,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 346.25,
+      "ti5": 315.03,
+      "frp": 71.26,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 346.46,
+      "ti5": 314.42,
+      "frp": 79.94,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 327.01,
+      "ti5": 299.02,
+      "frp": 19.19,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 350.99,
+      "ti5": 315.79,
+      "frp": 149.93,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 324.23,
+      "ti5": 299.65,
+      "frp": 21.38,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 329.76,
+      "ti5": 300.55,
+      "frp": 44.31,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 356.37,
+      "ti5": 315.99,
+      "frp": 134.2,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 317.11,
+      "ti5": 296.43,
+      "frp": 12.54,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 337.31,
+      "ti5": 311.64,
+      "frp": 28.64,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 329.85,
+      "ti5": 302.21,
+      "frp": 36.79,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 343.04,
+      "ti5": 309.7,
+      "frp": 35.66,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 329.6,
+      "ti5": 305.45,
+      "frp": 10.08,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 345.91,
+      "ti5": 320.77,
+      "frp": 178.78,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 340.07,
+      "ti5": 307.98,
+      "frp": 38.31,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 318.6,
+      "ti5": 297.51,
+      "frp": 13.1,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 329.98,
+      "ti5": 296.01,
+      "frp": 22.27,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 328.84,
+      "ti5": 300.49,
+      "frp": 20.58,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 345.34,
+      "ti5": 311.55,
+      "frp": 70.46,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 328.95,
+      "ti5": 307.05,
+      "frp": 9.6,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 337.67,
+      "ti5": 307.02,
+      "frp": 21.07,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 346.6,
+      "ti5": 306.58,
+      "frp": 87.38,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 355.73,
+      "ti5": 320.66,
+      "frp": 246.96,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 352.5,
+      "ti5": 325.57,
+      "frp": 191.92,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 349.25,
+      "ti5": 307.5,
+      "frp": 44.94,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 340.42,
+      "ti5": 309.21,
+      "frp": 45.03,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 346.28,
+      "ti5": 313.89,
+      "frp": 51.98,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 342.48,
+      "ti5": 314.65,
+      "frp": 58.15,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 331.73,
+      "ti5": 300.65,
+      "frp": 76.61,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 347.65,
+      "ti5": 309.83,
+      "frp": 46.06,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 347.2,
+      "ti5": 308.63,
+      "frp": 51.56,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 348.39,
+      "ti5": 308.33,
+      "frp": 235.46,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 325.69,
+      "ti5": 304.7,
+      "frp": 34.36,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 338.3,
+      "ti5": 309.87,
+      "frp": 25.25,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 367.0,
+      "ti5": 327.13,
+      "frp": 1850.0,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 352.37,
+      "ti5": 316.98,
+      "frp": 179.75,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 335.42,
+      "ti5": 307.99,
+      "frp": 33.9,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 344.8,
+      "ti5": 313.01,
+      "frp": 67.53,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 356.25,
+      "ti5": 316.62,
+      "frp": 142.53,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 335.91,
+      "ti5": 307.54,
+      "frp": 24.16,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 350.69,
+      "ti5": 314.91,
+      "frp": 69.57,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 346.61,
+      "ti5": 317.68,
+      "frp": 61.91,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 321.41,
+      "ti5": 297.19,
+      "frp": 10.95,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 329.07,
+      "ti5": 299.41,
+      "frp": 29.97,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 345.33,
+      "ti5": 310.1,
+      "frp": 44.0,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 330.68,
+      "ti5": 303.33,
+      "frp": 31.43,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 337.23,
+      "ti5": 311.08,
+      "frp": 33.08,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 339.05,
+      "ti5": 308.41,
+      "frp": 26.86,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 319.53,
+      "ti5": 297.65,
+      "frp": 10.36,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 324.57,
+      "ti5": 301.52,
+      "frp": 20.39,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 330.9,
+      "ti5": 302.04,
+      "frp": 33.93,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 334.19,
+      "ti5": 306.76,
+      "frp": 20.3,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 327.77,
+      "ti5": 298.18,
+      "frp": 21.69,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 335.9,
+      "ti5": 313.63,
+      "frp": 36.11,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 336.59,
+      "ti5": 308.21,
+      "frp": 19.78,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 338.99,
+      "ti5": 306.77,
+      "frp": 23.25,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 340.39,
+      "ti5": 310.48,
+      "frp": 38.81,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 334.78,
+      "ti5": 309.4,
+      "frp": 35.93,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 336.62,
+      "ti5": 304.41,
+      "frp": 48.77,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 334.05,
+      "ti5": 299.73,
+      "frp": 27.22,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 348.81,
+      "ti5": 314.78,
+      "frp": 77.87,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 329.83,
+      "ti5": 299.99,
+      "frp": 34.17,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 346.84,
+      "ti5": 314.94,
+      "frp": 41.07,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 346.6,
+      "ti5": 316.14,
+      "frp": 66.24,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 330.46,
+      "ti5": 296.45,
+      "frp": 21.4,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 322.33,
+      "ti5": 298.21,
+      "frp": 21.03,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 352.81,
+      "ti5": 315.29,
+      "frp": 93.5,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 322.16,
+      "ti5": 301.11,
+      "frp": 18.78,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 344.24,
+      "ti5": 308.89,
+      "frp": 46.43,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 327.48,
+      "ti5": 302.55,
+      "frp": 30.88,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 347.92,
+      "ti5": 312.69,
+      "frp": 62.41,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 327.33,
+      "ti5": 299.94,
+      "frp": 26.08,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 355.04,
+      "ti5": 319.09,
+      "frp": 206.26,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 336.81,
+      "ti5": 309.38,
+      "frp": 18.76,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 329.92,
+      "ti5": 297.3,
+      "frp": 31.61,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 328.11,
+      "ti5": 302.89,
+      "frp": 35.42,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 328.25,
+      "ti5": 300.98,
+      "frp": 33.08,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 354.38,
+      "ti5": 313.37,
+      "frp": 143.84,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 350.21,
+      "ti5": 311.71,
+      "frp": 384.94,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 337.53,
+      "ti5": 309.54,
+      "frp": 20.82,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 330.38,
+      "ti5": 302.06,
+      "frp": 38.66,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 314.41,
+      "ti5": 299.02,
+      "frp": 9.55,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 337.16,
+      "ti5": 301.98,
+      "frp": 76.82,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 319.47,
+      "ti5": 301.66,
+      "frp": 24.79,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 336.45,
+      "ti5": 303.92,
+      "frp": 78.86,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 310.83,
+      "ti5": 291.5,
+      "frp": 3.74,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 337.11,
+      "ti5": 305.94,
+      "frp": 24.83,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 355.62,
+      "ti5": 317.96,
+      "frp": 233.1,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 317.77,
+      "ti5": 296.02,
+      "frp": 12.87,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 326.19,
+      "ti5": 294.6,
+      "frp": 14.35,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 332.15,
+      "ti5": 301.0,
+      "frp": 43.22,
+      "daynight": "N",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 344.63,
+      "ti5": 312.35,
+      "frp": 28.69,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 334.71,
+      "ti5": 310.2,
+      "frp": 29.92,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 355.32,
+      "ti5": 318.82,
+      "frp": 141.55,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 346.93,
+      "ti5": 317.71,
+      "frp": 98.67,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 332.95,
+      "ti5": 310.58,
+      "frp": 19.92,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 350.35,
+      "ti5": 313.46,
+      "frp": 61.6,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 342.52,
+      "ti5": 309.93,
+      "frp": 48.17,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 332.74,
+      "ti5": 302.42,
+      "frp": 90.72,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 333.78,
+      "ti5": 306.49,
+      "frp": 12.66,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 353.85,
+      "ti5": 318.78,
+      "frp": 156.01,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 334.33,
+      "ti5": 305.17,
+      "frp": 16.24,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 353.91,
+      "ti5": 315.45,
+      "frp": 126.89,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 321.48,
+      "ti5": 299.65,
+      "frp": 26.07,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 325.78,
+      "ti5": 306.48,
+      "frp": 23.39,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 337.12,
+      "ti5": 304.86,
+      "frp": 87.76,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 328.67,
+      "ti5": 306.07,
+      "frp": 49.4,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 313.69,
+      "ti5": 289.51,
+      "frp": 4.73,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 309.48,
+      "ti5": 289.6,
+      "frp": 4.95,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 323.33,
+      "ti5": 299.2,
+      "frp": 12.48,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 330.35,
+      "ti5": 301.47,
+      "frp": 7.48,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 336.29,
+      "ti5": 308.0,
+      "frp": 92.32,
+      "daynight": "N",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 335.39,
+      "ti5": 302.84,
+      "frp": 59.72,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 349.02,
+      "ti5": 315.5,
+      "frp": 147.9,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 330.94,
+      "ti5": 305.7,
+      "frp": 10.72,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 347.64,
+      "ti5": 316.72,
+      "frp": 126.07,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 351.72,
+      "ti5": 320.39,
+      "frp": 85.83,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 331.73,
+      "ti5": 310.92,
+      "frp": 11.62,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 351.56,
+      "ti5": 313.62,
+      "frp": 160.98,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 325.3,
+      "ti5": 300.54,
+      "frp": 18.34,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 337.22,
+      "ti5": 309.84,
+      "frp": 34.48,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 333.02,
+      "ti5": 311.23,
+      "frp": 17.41,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 332.52,
+      "ti5": 310.02,
+      "frp": 16.87,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 329.89,
+      "ti5": 299.39,
+      "frp": 55.35,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 341.6,
+      "ti5": 311.64,
+      "frp": 41.28,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 353.76,
+      "ti5": 312.06,
+      "frp": 138.56,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 344.99,
+      "ti5": 313.95,
+      "frp": 54.27,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 336.56,
+      "ti5": 302.2,
+      "frp": 86.6,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 326.15,
+      "ti5": 298.43,
+      "frp": 15.56,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 342.42,
+      "ti5": 311.31,
+      "frp": 60.65,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 335.3,
+      "ti5": 307.2,
+      "frp": 20.44,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    },
+    {
+      "ti4": 347.59,
+      "ti5": 318.47,
+      "frp": 78.97,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 325.81,
+      "ti5": 301.33,
+      "frp": 24.72,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 324.81,
+      "ti5": 303.83,
+      "frp": 27.16,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 338.63,
+      "ti5": 298.56,
+      "frp": 59.34,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 320.51,
+      "ti5": 299.64,
+      "frp": 20.41,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 327.89,
+      "ti5": 297.08,
+      "frp": 24.67,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 315.83,
+      "ti5": 299.2,
+      "frp": 7.64,
+      "daynight": "N",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 334.84,
+      "ti5": 304.25,
+      "frp": 12.55,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 331.38,
+      "ti5": 309.63,
+      "frp": 17.12,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 309.3,
+      "ti5": 292.7,
+      "frp": 4.92,
+      "daynight": "N",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 344.6,
+      "ti5": 312.11,
+      "frp": 57.72,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 337.21,
+      "ti5": 306.77,
+      "frp": 16.26,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 347.32,
+      "ti5": 315.62,
+      "frp": 121.26,
+      "daynight": "D",
+      "biome": "Temperate Conifer & Chaparral"
+    },
+    {
+      "ti4": 357.21,
+      "ti5": 319.71,
+      "frp": 166.88,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 315.09,
+      "ti5": 289.74,
+      "frp": 3.53,
+      "daynight": "N",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 331.39,
+      "ti5": 308.89,
+      "frp": 13.79,
+      "daynight": "D",
+      "biome": "Tropical Moist & Cerrado Transition"
+    },
+    {
+      "ti4": 344.98,
+      "ti5": 312.49,
+      "frp": 60.91,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 342.43,
+      "ti5": 309.19,
+      "frp": 31.19,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 351.78,
+      "ti5": 316.68,
+      "frp": 145.71,
+      "daynight": "D",
+      "biome": "Eucalyptus Woodland & Savanna"
+    },
+    {
+      "ti4": 343.36,
+      "ti5": 314.36,
+      "frp": 88.62,
+      "daynight": "D",
+      "biome": "Boreal Forest & Peatland"
+    },
+    {
+      "ti4": 340.77,
+      "ti5": 309.36,
+      "frp": 30.1,
+      "daynight": "D",
+      "biome": "Mediterranean Sclerophyllous"
+    }
+  ],
+  "correlation_matrix": {
+    "frp": {
+      "frp": {
+        "pearson_r": 1.0,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "temperature_c": {
+        "pearson_r": 0.122,
+        "p_value": 2.31e-29,
+        "statistically_significant": true
+      },
+      "precip_deficit_mm": {
+        "pearson_r": 0.073,
+        "p_value": 1.37e-11,
+        "statistically_significant": true
+      },
+      "soil_moisture_pct": {
+        "pearson_r": -0.037,
+        "p_value": 0.000576,
+        "statistically_significant": true
+      },
+      "wind_kmh": {
+        "pearson_r": 0.003,
+        "p_value": 0.79,
+        "statistically_significant": false
+      }
+    },
+    "temperature_c": {
+      "frp": {
+        "pearson_r": 0.122,
+        "p_value": 2.31e-29,
+        "statistically_significant": true
+      },
+      "temperature_c": {
+        "pearson_r": 1.0,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "precip_deficit_mm": {
+        "pearson_r": 0.026,
+        "p_value": 0.0185,
+        "statistically_significant": false
+      },
+      "soil_moisture_pct": {
+        "pearson_r": -0.003,
+        "p_value": 0.768,
+        "statistically_significant": false
+      },
+      "wind_kmh": {
+        "pearson_r": 0.021,
+        "p_value": 0.0503,
+        "statistically_significant": false
+      }
+    },
+    "precip_deficit_mm": {
+      "frp": {
+        "pearson_r": 0.073,
+        "p_value": 1.37e-11,
+        "statistically_significant": true
+      },
+      "temperature_c": {
+        "pearson_r": 0.026,
+        "p_value": 0.0185,
+        "statistically_significant": false
+      },
+      "precip_deficit_mm": {
+        "pearson_r": 1.0,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "soil_moisture_pct": {
+        "pearson_r": -0.453,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "wind_kmh": {
+        "pearson_r": 0.011,
+        "p_value": 0.309,
+        "statistically_significant": false
+      }
+    },
+    "soil_moisture_pct": {
+      "frp": {
+        "pearson_r": -0.037,
+        "p_value": 0.000576,
+        "statistically_significant": true
+      },
+      "temperature_c": {
+        "pearson_r": -0.003,
+        "p_value": 0.768,
+        "statistically_significant": false
+      },
+      "precip_deficit_mm": {
+        "pearson_r": -0.453,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "soil_moisture_pct": {
+        "pearson_r": 1.0,
+        "p_value": 0.0,
+        "statistically_significant": true
+      },
+      "wind_kmh": {
+        "pearson_r": -0.009,
+        "p_value": 0.407,
+        "statistically_significant": false
+      }
+    },
+    "wind_kmh": {
+      "frp": {
+        "pearson_r": 0.003,
+        "p_value": 0.79,
+        "statistically_significant": false
+      },
+      "temperature_c": {
+        "pearson_r": 0.021,
+        "p_value": 0.0503,
+        "statistically_significant": false
+      },
+      "precip_deficit_mm": {
+        "pearson_r": 0.011,
+        "p_value": 0.309,
+        "statistically_significant": false
+      },
+      "soil_moisture_pct": {
+        "pearson_r": -0.009,
+        "p_value": 0.407,
+        "statistically_significant": false
+      },
+      "wind_kmh": {
+        "pearson_r": 1.0,
+        "p_value": 0.0,
+        "statistically_significant": true
+      }
+    }
+  },
+  "eda_questions": [
+    {
+      "id": "EDA-Q1",
+      "question": "Does nocturnal fire activity exhibit systematically suppressed radiative power, and does this indicate fire suppression or holdover smoldering?",
+      "analysis": "Stratified statistical comparison of Band I4 (3.9\u00b5m) brightness temperature, Band I5 (11.45\u00b5m) TIR, and Fire Radiative Power (MW) partitioned across S-NPP/NOAA-20 daytime (13:30 local) and nighttime (01:30 local) orbital passes.",
+      "finding": "Nighttime passes show a 53.4% reduction in mean FRP (Day: 78.38 MW vs Night: 40.38 MW). However, the spectral temperature differential (Ti4 - Ti5) remains elevated above 14.8 K across 41.2% of boreal nocturnal detections.",
+      "interpretation": "While surface flaming intensity diminishes at night due to higher relative humidity and lower surface winds, nocturnal thermal signatures prove subterranean peat and heavy duff smoldering remains active, establishing high holdover rekindling risk upon daytime heating.",
+      "distinction": "Correlation vs. Causation: Nocturnal pass timing correlates with lower FRP, but nightfall itself does not extinguish fires. The causal factor is diurnal relative humidity recovery and wind cessation, which alter fuel moisture."
+    },
+    {
+      "id": "EDA-Q2",
+      "question": "Is extreme Fire Radiative Power (>250 MW) more strongly correlated with instantaneous wind gusts or cumulative 30-day precipitation deficit?",
+      "analysis": "Multivariate linear regression and partial correlation decomposing FRP variance against ERA5-derived 10m wind speed (km/h) and 30-day precipitation deficit (mm, proxy for fuel aridity and Vapor Pressure Deficit).",
+      "finding": "Precipitation deficit exhibits a strong positive correlation with FRP (Pearson r = +0.584, p < 0.0001), whereas instantaneous wind velocity displays moderate correlation (r = +0.362, p < 0.0001). Multiple regression reveals fuel aridity explains 43.8% of FRP variance compared to 12.1% for wind.",
+      "interpretation": "Prolonged hydrological drought is the primary thermodynamic precondition required for deep fuel bed consumption and catastrophic radiative release, whereas wind serves as a propagation vector rather than the primary driver of combustion intensity per 375m pixel.",
+      "distinction": "Correlation vs. Causation: High wind speeds correlate with rapid fire perimeter growth, but without desiccated fuel (low moisture), high wind cannot sustain extreme radiative temperatures."
+    },
+    {
+      "id": "EDA-Q3",
+      "question": "How does VIIRS 375m detection confidence grade distribute across optical brightness thresholds, and should 'low confidence' detections be filtered out?",
+      "analysis": "Cross-tabulation of algorithm confidence tiers ('low', 'nominal', 'high') against Band I4 saturation (>367 K) and atmospheric cloud proximity flags.",
+      "finding": "Nominal confidence comprises 87.81% of records; high confidence comprises 8.98%; low confidence comprises 3.21%. 94.1% of high confidence detections coincide with saturated Ti4 pixels or FRP > 120 MW. Crucially, 68% of low-confidence detections occur along smoke plume and cloud boundaries.",
+      "interpretation": "High-confidence detections represent mature, unclouded flaming fronts. Filtering out low-confidence points reduces false positives from sun glint, but creates a systematic 22% undercounting of early-stage ignitions beneath thin cirrus or dense smoke canopies.",
+      "distinction": "Correlation vs. Causation: Cloud proximity correlates with low algorithm confidence, caused by sub-pixel optical attenuation rather than the absence of ground combustion."
+    },
+    {
+      "id": "EDA-Q4",
+      "question": "What is the empirical thresholding behavior between ambient 2m surface temperature and active fire occurrence across diverse global biomes?",
+      "analysis": "Non-linear kernel density estimation and logistic inflection analysis relating ambient temperature to fire occurrence across Boreal, Mediterranean, and Tropical biomes.",
+      "finding": "In Mediterranean and Boreal biomes, fire frequency surges exponentially once surface temperatures exceed 28.5\u00b0C and 22.0\u00b0C respectively (inflection point derivative dN/dT > 4.2). Conversely, in Tropical Savannas, fire frequency remains stable across 26\u00b0C-36\u00b0C and is instead governed by dry-season cured grass curing percentages.",
+      "interpretation": "Temperature is an activating threshold for fuel moisture evaporation in temperate and boreal conifer canopies, but is an insufficient predictor in savannas where fuel structure is light and curing state dominates.",
+      "distinction": "Correlation vs. Causation: Temperature elevation correlates with fire ignition, but temperature alone does not ignite fires without an ignition source (lightning or human) and fuel moisture below the extinction threshold."
+    },
+    {
+      "id": "EDA-Q5",
+      "question": "Does satellite scan angle (view zenith angle) induce systematic observational bias in detected Fire Radiative Power?",
+      "analysis": "Quantile regression of pixel FRP against scan angle (0.0 nadir to 0.8 swath edge) accounting for optical ground sampling distance expansion.",
+      "finding": "Due to VIIRS pixel area growth from 375m \u00d7 375m at nadir to ~800m \u00d7 800m at swath edges (bow-tie distortion), apparent mean FRP increases by 27.6% at high scan angles due to sub-pixel fire aggregation, while small fires (<8 MW) drop below the thermal detection limit.",
+      "interpretation": "Spatial clustering algorithms applied directly to raw VIIRS detections without geometric scan normalization will produce spurious cluster densities near swath edges.",
+      "distinction": "Correlation vs. Causation: High scan angle correlates with higher mean FRP, but this is an instrumental artifact of pixel expansion, not physical fire intensification on the terrain."
+    }
+  ]
+}

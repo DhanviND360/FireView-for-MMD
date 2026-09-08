@@ -1,0 +1,259 @@
+{
+  "pagerank": {
+    "parameters": {
+      "damping_factor": 0.85,
+      "converged_iterations": 32,
+      "final_residual": "3.84e-7",
+      "tolerance": 0.000001
+    },
+    "top_nodes": [
+      {
+        "region": "Hay River Peat Basin (Canada)",
+        "pagerank_score": 0.1428,
+        "in_degree": 14,
+        "out_degree": 11,
+        "centrality_tier": "Critical Hub"
+      },
+      {
+        "region": "Sierra Nevada Crest (California)",
+        "pagerank_score": 0.1285,
+        "in_degree": 12,
+        "out_degree": 9,
+        "centrality_tier": "Critical Hub"
+      },
+      {
+        "region": "Pantanal Wetland Fringe (Brazil)",
+        "pagerank_score": 0.1142,
+        "in_degree": 11,
+        "out_degree": 8,
+        "centrality_tier": "High Centrality"
+      },
+      {
+        "region": "Lena River Taiga (Russia)",
+        "pagerank_score": 0.0984,
+        "in_degree": 9,
+        "out_degree": 7,
+        "centrality_tier": "High Centrality"
+      },
+      {
+        "region": "Cascades Timberline (Oregon)",
+        "pagerank_score": 0.0891,
+        "in_degree": 8,
+        "out_degree": 6,
+        "centrality_tier": "Moderate Hub"
+      },
+      {
+        "region": "Fort McMurray Zone (Canada)",
+        "pagerank_score": 0.0815,
+        "in_degree": 8,
+        "out_degree": 5,
+        "centrality_tier": "Moderate Hub"
+      },
+      {
+        "region": "Northern Territory Savanna (Australia)",
+        "pagerank_score": 0.0742,
+        "in_degree": 7,
+        "out_degree": 6,
+        "centrality_tier": "Regional Hub"
+      },
+      {
+        "region": "Peloponnese Shrubland (Greece)",
+        "pagerank_score": 0.0698,
+        "in_degree": 6,
+        "out_degree": 5,
+        "centrality_tier": "Regional Hub"
+      },
+      {
+        "region": "Cerrado Transition (Brazil)",
+        "pagerank_score": 0.0651,
+        "in_degree": 6,
+        "out_degree": 4,
+        "centrality_tier": "Perimeter Node"
+      },
+      {
+        "region": "Sumatra Peat Swamp (Indonesia)",
+        "pagerank_score": 0.0524,
+        "in_degree": 5,
+        "out_degree": 4,
+        "centrality_tier": "Perimeter Node"
+      },
+      {
+        "region": "Iberian Eucalyptus Montado (Portugal)",
+        "pagerank_score": 0.0468,
+        "in_degree": 4,
+        "out_degree": 3,
+        "centrality_tier": "Peripheral"
+      },
+      {
+        "region": "Blue Mountains Ridge (Australia)",
+        "pagerank_score": 0.0372,
+        "in_degree": 3,
+        "out_degree": 3,
+        "centrality_tier": "Peripheral"
+      }
+    ]
+  },
+  "dgim": {
+    "parameters": {
+      "window_size": 65536,
+      "threshold_mw": 50.0,
+      "error_bound_pct": 50,
+      "stream_rate_hz": 120
+    },
+    "stream_summary": [
+      {
+        "metric": "High-FRP Spikes (>50 MW)",
+        "dgim_estimate": 4128,
+        "exact_count": 4210,
+        "error_pct": "1.95%"
+      },
+      {
+        "metric": "Extreme Thermal Bursts (>200 MW)",
+        "dgim_estimate": 684,
+        "exact_count": 697,
+        "error_pct": "1.86%"
+      },
+      {
+        "metric": "Night-Time Active Anomalies",
+        "dgim_estimate": 1942,
+        "exact_count": 1990,
+        "error_pct": "2.41%"
+      },
+      {
+        "metric": "Rapid Multi-Front Detections",
+        "dgim_estimate": 876,
+        "exact_count": 892,
+        "error_pct": "1.79%"
+      },
+      {
+        "metric": "Low Moisture + High Wind Intersects",
+        "dgim_estimate": 2340,
+        "exact_count": 2398,
+        "error_pct": "2.42%"
+      }
+    ],
+    "bucket_state": {
+      "total_buckets": 46,
+      "capacity_bits": 65536,
+      "max_bucket_size": 8192,
+      "memory_footprint_bytes": 368
+    }
+  },
+  "fpgrowth": {
+    "parameters": {
+      "min_support": 0.15,
+      "min_confidence": 0.65,
+      "frequent_patterns_found": 38,
+      "fp_tree_nodes": 142
+    },
+    "top_frequent_itemsets": [
+      {
+        "itemset": ["VPD > 3.5 kPa", "Soil Moisture < 10%", "FRP Surge > 50 MW"],
+        "support": 0.384,
+        "count": 3264
+      },
+      {
+        "itemset": ["Surface Temp > 35°C", "Wind > 30 km/h", "Rapid Spread"],
+        "support": 0.312,
+        "count": 2652
+      },
+      {
+        "itemset": ["Night Detection", "FRP > 40 MW", "Peatland Biome"],
+        "support": 0.246,
+        "count": 2091
+      },
+      {
+        "itemset": ["Precipitation Deficit", "Ti4 > 360K", "Conifer Fuel"],
+        "support": 0.228,
+        "count": 1938
+      },
+      {
+        "itemset": ["Drought Index High", "Wind Shear", "Multi-Day Run"],
+        "support": 0.194,
+        "count": 1649
+      }
+    ],
+    "association_rules": [
+      {
+        "antecedent": ["VPD > 3.5 kPa", "Soil Moisture < 10%"],
+        "consequent": ["FRP Surge > 50 MW"],
+        "confidence": 0.892,
+        "lift": 2.34,
+        "conviction": 4.12
+      },
+      {
+        "antecedent": ["Wind > 30 km/h", "High Fuel Loading"],
+        "consequent": ["Rapid Lateral Perimeter Growth"],
+        "confidence": 0.841,
+        "lift": 2.18,
+        "conviction": 3.76
+      },
+      {
+        "antecedent": ["Peatland Biome", "Night Active Detections"],
+        "consequent": ["Smoldering Deep Fuel Burn"],
+        "confidence": 0.915,
+        "lift": 3.02,
+        "conviction": 5.48
+      },
+      {
+        "antecedent": ["Surface Temp > 35°C", "Precipitation Deficit > 30d"],
+        "consequent": ["Extreme Risk Tier Classification"],
+        "confidence": 0.867,
+        "lift": 2.56,
+        "conviction": 4.29
+      }
+    ]
+  },
+  "pcy": {
+    "parameters": {
+      "hash_buckets": 1000000,
+      "support_threshold": 120,
+      "hash_function": "h(x,y) = (x * 7919 + y * 104729) % 1000000"
+    },
+    "performance": [
+      {
+        "pass": "Pass 1 (Frequent Items + Hash)",
+        "candidate_pairs": 4820000,
+        "frequent_pairs": 1420,
+        "memory_mb": 1.2,
+        "time_ms": 34
+      },
+      {
+        "pass": "Pass 2 (Bitmap Filtered Counting)",
+        "candidate_pairs": 42100,
+        "frequent_pairs": 1380,
+        "memory_mb": 3.4,
+        "time_ms": 18
+      }
+    ],
+    "hash_bitmap": {
+      "utilization_pct": 3.42,
+      "bits_set": 34200,
+      "total_buckets": 1000000,
+      "false_positive_rate": "< 0.008",
+      "pruning_efficiency": "99.13%"
+    },
+    "top_pairs": [
+      {
+        "pair": ["Extreme VPD (>3.8 kPa)", "Night Active FRP"],
+        "count": 1842,
+        "pmi": 2.48
+      },
+      {
+        "pair": ["Wind Shear (>35 km/h)", "Low Fuel Moisture"],
+        "count": 1620,
+        "pmi": 2.31
+      },
+      {
+        "pair": ["Peat Smolder", "Holdover Zombie Fire"],
+        "count": 1210,
+        "pmi": 3.14
+      },
+      {
+        "pair": ["Atmospheric Blocking High", "Consecutive Heatwave"],
+        "count": 1094,
+        "pmi": 2.76
+      }
+    ]
+  }
+}

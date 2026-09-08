@@ -1,0 +1,68 @@
+{
+  "total_active_alerts": 5,
+  "critical_count": 2,
+  "high_count": 2,
+  "medium_count": 1,
+  "alerts": [
+    {
+      "id": "ALT-2024-001",
+      "timestamp": "2024-08-14T03:15:00Z",
+      "category": "Activity Spike",
+      "severity": "CRITICAL",
+      "region_id": "GRID-NA-03",
+      "region_name": "Hay River Boreal Peat Basin (Canada)",
+      "metric_trigger": "FRP surge > 3.8\u03c3 above 30-day baseline (Mean: 92.1 MW, Peak: 1,820 MW)",
+      "cause": "Dry cold front passage inducing 48 km/h wind shear over drought-stressed peat",
+      "status": "ACTIVE",
+      "confidence_level": "99.4%"
+    },
+    {
+      "id": "ALT-2024-002",
+      "timestamp": "2024-08-14T01:45:00Z",
+      "category": "Historical Similarity Match",
+      "severity": "HIGH",
+      "region_id": "GRID-NA-01",
+      "region_name": "Sierra Nevada Northern Crest (California)",
+      "metric_trigger": "94.2% LSH cosine match to 2020 August Complex ignition signature",
+      "cause": "Vapor Pressure Deficit reached 4.1 kPa with 36.8\u00b0C surface heating & 6.2% soil moisture",
+      "status": "ACTIVE",
+      "confidence_level": "95.1%"
+    },
+    {
+      "id": "ALT-2024-003",
+      "timestamp": "2024-08-13T22:30:00Z",
+      "category": "Emerging Hotspot Cluster",
+      "severity": "HIGH",
+      "region_id": "GRID-SA-02",
+      "region_name": "Pantanal Wetland Fringe (Brazil)",
+      "metric_trigger": "DBSCAN spatio-temporal cluster density increased from 14 to 88 points within 12h",
+      "cause": "Rapid fire perimeter expansion across dessicated floating organic mats",
+      "status": "ACTIVE",
+      "confidence_level": "96.8%"
+    },
+    {
+      "id": "ALT-2024-004",
+      "timestamp": "2024-08-13T18:10:00Z",
+      "category": "Environmental Pattern Match",
+      "severity": "MEDIUM",
+      "region_id": "GRID-EU-02",
+      "region_name": "Peloponnese Coastal Shrubland (Greece)",
+      "metric_trigger": "Meltemi wind vector alignment with 42.5\u00b0C heat dome (>4.8 kPa VPD)",
+      "cause": "Resinous pine canopy fuel moisture content dropped below critical 9% threshold",
+      "status": "MONITORING",
+      "confidence_level": "92.3%"
+    },
+    {
+      "id": "ALT-2024-005",
+      "timestamp": "2024-08-13T14:00:00Z",
+      "category": "Streaming Anomaly",
+      "severity": "HIGH",
+      "region_id": "GRID-AS-01",
+      "region_name": "Lena River Larch Taiga (Russia)",
+      "metric_trigger": "DGIM logarithmic counter detected 54 consecutive high-FRP detections in N=256 window",
+      "cause": "Holdover zombie fire breakout following prolonged atmospheric blocking high",
+      "status": "ACTIVE",
+      "confidence_level": "97.2%"
+    }
+  ]
+}

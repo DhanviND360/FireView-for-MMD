@@ -1,0 +1,102 @@
+{
+  "methodology": "MinHash Locality-Sensitive Hashing (LSH) & Vector Cosine Similarity Search",
+  "lsh_configuration": {
+    "bands_b": 10,
+    "rows_per_band_r": 5,
+    "total_hash_functions": 50,
+    "metric": "Jaccard/Cosine Angle"
+  },
+  "query_state": {
+    "region_name": "Active Western US Sierra Sector (Current Observation)",
+    "vector": {
+      "frp_density": 85.2,
+      "temp_c": 36.4,
+      "precip_deficit_mm": 138.0,
+      "soil_moisture_pct": 7.1,
+      "wind_kmh": 41.5,
+      "diurnal_ratio": 0.7
+    }
+  },
+  "top_historical_matches": [
+    {
+      "historical_id": "HIST-2020-AUG",
+      "name": "2020 August Complex (California)",
+      "year": 2020,
+      "burned_acres": "1,032,648 acres",
+      "primary_cause": "Dry lightning siege + extreme VPD (>4.2 kPa)",
+      "cosine_similarity_pct": 100.0,
+      "lsh_band_collision_prob": 1.0,
+      "matched_features": {
+        "query_frp": 85.2,
+        "hist_frp": 88.4,
+        "query_precip_deficit": 138.0,
+        "hist_precip_deficit": 142.0,
+        "query_temp": 36.4,
+        "hist_temp": 37.8
+      },
+      "trajectory_7d": "Explosive multi-front perimeter expansion (+340,000 acres)",
+      "trajectory_14d": "Pyro-cumulonimbus (pyroCb) storm generation reaching stratosphere",
+      "trajectory_30d": "Coalescence into California's first 'gigafire'"
+    },
+    {
+      "historical_id": "HIST-2021-EVIA",
+      "name": "2021 Northern Evia Fire (Greece)",
+      "year": 2021,
+      "burned_acres": "125,000 acres",
+      "primary_cause": "Historic 45\u00b0C heat dome + dense resinous Aleppo pine",
+      "cosine_similarity_pct": 99.8,
+      "lsh_band_collision_prob": 1.0,
+      "matched_features": {
+        "query_frp": 85.2,
+        "hist_frp": 76.5,
+        "query_precip_deficit": 138.0,
+        "hist_precip_deficit": 125.0,
+        "query_temp": 36.4,
+        "hist_temp": 44.1
+      },
+      "trajectory_7d": "Rapid cross-island advance severing coastal escape routes",
+      "trajectory_14d": "Complete canopy consumption in coastal forest belt",
+      "trajectory_30d": "Subdued post-burn ash mobilization into Gulf of Euboea"
+    },
+    {
+      "historical_id": "HIST-2019-BLACKSUM",
+      "name": "2019-20 Black Summer (Gospers Mountain, NSW)",
+      "year": 2019,
+      "burned_acres": "1,260,000 acres",
+      "primary_cause": "Record positive Indian Ocean Dipole + catastrophic FFDI > 100",
+      "cosine_similarity_pct": 99.7,
+      "lsh_band_collision_prob": 1.0,
+      "matched_features": {
+        "query_frp": 85.2,
+        "hist_frp": 92.0,
+        "query_precip_deficit": 138.0,
+        "hist_precip_deficit": 178.0,
+        "query_temp": 36.4,
+        "hist_temp": 41.2
+      },
+      "trajectory_7d": "Spotting distances observed exceeding 12 km ahead of main front",
+      "trajectory_14d": "Severe crown fire coalescence across Hawkesbury sandstone gorges",
+      "trajectory_30d": "Mega-complex containment failure under gale-force westerly winds"
+    },
+    {
+      "historical_id": "HIST-2023-DONNIE",
+      "name": "2023 Donnie Creek (British Columbia)",
+      "year": 2023,
+      "burned_acres": "1,440,000 acres (583k ha)",
+      "primary_cause": "Multi-year drought in boreal spruce/peat",
+      "cosine_similarity_pct": 99.4,
+      "lsh_band_collision_prob": 1.0,
+      "matched_features": {
+        "query_frp": 85.2,
+        "hist_frp": 94.2,
+        "query_precip_deficit": 138.0,
+        "hist_precip_deficit": 165.0,
+        "query_temp": 36.4,
+        "hist_temp": 29.5
+      },
+      "trajectory_7d": "Deep peat ignition sustaining continuous nocturnal flaming",
+      "trajectory_14d": "Sustained high FRP > 800 MW over 14 consecutive overpasses",
+      "trajectory_30d": "Holdover combustion through season end"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "model_name": "Calibrated Random Forest Spatio-Temporal Classifier",
+  "framing": "Fire-Activity Risk (Strictly designates statistical activity probability; never claims guaranteed fire prediction)",
+  "evaluation_split": "Strict Temporal Holdout (80% Historical Train, 20% Future Holdout Test)",
+  "test_set_samples": 700,
+  "metrics": {
+    "roc_auc": 0.842,
+    "pr_auc": 0.823,
+    "precision": 0.785,
+    "recall": 0.675,
+    "f1_score": 0.726,
+    "brier_calibration_score": 0.1566
+  },
+  "confusion_matrix": {
+    "true_negatives": 342,
+    "false_positives": 56,
+    "false_negatives": 98,
+    "true_positives": 204,
+    "total_test": 700
+  },
+  "risk_tiers": {
+    "Low Fire-Activity Risk": {
+      "threshold": "< 25% probability",
+      "proportion_pct": 61.4,
+      "action": "Baseline Monitoring"
+    },
+    "Moderate Fire-Activity Risk": {
+      "threshold": "25% - 55% probability",
+      "proportion_pct": 24.2,
+      "action": "Heightened Satellite Vigilance"
+    },
+    "High Fire-Activity Risk": {
+      "threshold": "55% - 80% probability",
+      "proportion_pct": 10.8,
+      "action": "Sub-Daily Orbital Re-analysis"
+    },
+    "Extreme Fire-Activity Risk": {
+      "threshold": "> 80% probability",
+      "proportion_pct": 3.6,
+      "action": "Active Rapid-Spike Alerting"
+    }
+  },
+  "calibration_curve": [
+    {
+      "predicted_probability": 0.108,
+      "observed_frequency": 0.082
+    },
+    {
+      "predicted_probability": 0.172,
+      "observed_frequency": 0.194
+    },
+    {
+      "predicted_probability": 0.308,
+      "observed_frequency": 0.378
+    },
+    {
+      "predicted_probability": 0.437,
+      "observed_frequency": 0.339
+    },
+    {
+      "predicted_probability": 0.566,
+      "observed_frequency": 0.556
+    },
+    {
+      "predicted_probability": 0.69,
+      "observed_frequency": 0.674
+    },
+    {
+      "predicted_probability": 0.824,
+      "observed_frequency": 0.774
+    },
+    {
+      "predicted_probability": 0.927,
+      "observed_frequency": 0.945
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.01,
+      "tpr": 0.288
+    },
+    {
+      "fpr": 0.02,
+      "tpr": 0.391
+    },
+    {
+      "fpr": 0.035,
+      "tpr": 0.444
+    },
+    {
+      "fpr": 0.045,
+      "tpr": 0.493
+    },
+    {
+      "fpr": 0.063,
+      "tpr": 0.526
+    },
+    {
+      "fpr": 0.078,
+      "tpr": 0.573
+    },
+    {
+      "fpr": 0.106,
+      "tpr": 0.589
+    },
+    {
+      "fpr": 0.118,
+      "tpr": 0.636
+    },
+    {
+      "fpr": 0.136,
+      "tpr": 0.662
+    },
+    {
+      "fpr": 0.156,
+      "tpr": 0.689
+    },
+    {
+      "fpr": 0.204,
+      "tpr": 0.715
+    },
+    {
+      "fpr": 0.236,
+      "tpr": 0.742
+    },
+    {
+      "fpr": 0.269,
+      "tpr": 0.765
+    },
+    {
+      "fpr": 0.289,
+      "tpr": 0.795
+    },
+    {
+      "fpr": 0.334,
+      "tpr": 0.811
+    },
+    {
+      "fpr": 0.352,
+      "tpr": 0.831
+    },
+    {
+      "fpr": 0.369,
+      "tpr": 0.844
+    },
+    {
+      "fpr": 0.392,
+      "tpr": 0.871
+    },
+    {
+      "fpr": 0.437,
+      "tpr": 0.891
+    },
+    {
+      "fpr": 0.497,
+      "tpr": 0.907
+    },
+    {
+      "fpr": 0.563,
+      "tpr": 0.921
+    },
+    {
+      "fpr": 0.601,
+      "tpr": 0.94
+    },
+    {
+      "fpr": 0.691,
+      "tpr": 0.954
+    },
+    {
+      "fpr": 0.784,
+      "tpr": 0.977
+    },
+    {
+      "fpr": 0.957,
+      "tpr": 0.993
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "recall": 1.0,
+      "precision": 0.431
+    },
+    {
+      "recall": 0.99,
+      "precision": 0.445
+    },
+    {
+      "recall": 0.977,
+      "precision": 0.458
+    },
+    {
+      "recall": 0.977,
+      "precision": 0.479
+    },
+    {
+      "recall": 0.97,
+      "precision": 0.498
+    },
+    {
+      "recall": 0.954,
+      "precision": 0.514
+    },
+    {
+      "recall": 0.947,
+      "precision": 0.538
+    },
+    {
+      "recall": 0.924,
+      "precision": 0.554
+    },
+    {
+      "recall": 0.907,
+      "precision": 0.576
+    },
+    {
+      "recall": 0.897,
+      "precision": 0.605
+    },
+    {
+      "recall": 0.871,
+      "precision": 0.626
+    },
+    {
+      "recall": 0.831,
+      "precision": 0.64
+    },
+    {
+      "recall": 0.798,
+      "precision": 0.662
+    },
+    {
+      "recall": 0.765,
+      "precision": 0.688
+    },
+    {
+      "recall": 0.732,
+      "precision": 0.718
+    },
+    {
+      "recall": 0.692,
+      "precision": 0.746
+    },
+    {
+      "recall": 0.662,
+      "precision": 0.794
+    },
+    {
+      "recall": 0.603,
+      "precision": 0.812
+    },
+    {
+      "recall": 0.56,
+      "precision": 0.862
+    },
+    {
+      "recall": 0.493,
+      "precision": 0.887
+    },
+    {
+      "recall": 0.421,
+      "precision": 0.907
+    },
+    {
+      "recall": 0.351,
+      "precision": 0.946
+    },
+    {
+      "recall": 0.268,
+      "precision": 0.964
+    },
+    {
+      "recall": 0.175,
+      "precision": 0.946
+    },
+    {
+      "recall": 0.086,
+      "precision": 0.929
+    },
+    {
+      "recall": 0.0,
+      "precision": 1.0
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "30-Day Precipitation Deficit (VPD Proxy)",
+      "importance_weight": 0.447,
+      "percentage": 44.7
+    },
+    {
+      "feature": "Recent 7-Day Active Fire Frequency",
+      "importance_weight": 0.192,
+      "percentage": 19.2
+    },
+    {
+      "feature": "Root-Zone Soil Moisture Deficit",
+      "importance_weight": 0.156,
+      "percentage": 15.6
+    },
+    {
+      "feature": "Ambient 2m Temperature Anomaly",
+      "importance_weight": 0.088,
+      "percentage": 8.8
+    },
+    {
+      "feature": "10m Surface Wind Velocity",
+      "importance_weight": 0.075,
+      "percentage": 7.5
+    },
+    {
+      "feature": "Mean Band I4 Brightness Temperature",
+      "importance_weight": 0.043,
+      "percentage": 4.3
+    }
+  ]
+}

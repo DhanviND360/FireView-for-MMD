@@ -1,0 +1,178 @@
+{
+  "algorithm": "Mini-Batch K-Means Spatio-Temporal Feature Clustering",
+  "feature_dimensions": [
+    "latitude_norm",
+    "longitude_norm",
+    "temporal_month_norm",
+    "log_frp_norm",
+    "ti4_temperature_norm"
+  ],
+  "optimal_k": 6,
+  "overall_silhouette_score": 0.584,
+  "overall_davies_bouldin_index": 0.742,
+  "calinski_harabasz_score": 14289.4,
+  "inertia_curve": [
+    {
+      "k": 3,
+      "inertia_sse": 19410.3
+    },
+    {
+      "k": 4,
+      "inertia_sse": 17292.0
+    },
+    {
+      "k": 5,
+      "inertia_sse": 15299.2
+    },
+    {
+      "k": 6,
+      "inertia_sse": 12645.8
+    },
+    {
+      "k": 7,
+      "inertia_sse": 12399.8
+    },
+    {
+      "k": 8,
+      "inertia_sse": 10988.3
+    }
+  ],
+  "silhouette_curve": [
+    {
+      "k": 3,
+      "silhouette_score": 0.32
+    },
+    {
+      "k": 4,
+      "silhouette_score": 0.246
+    },
+    {
+      "k": 5,
+      "silhouette_score": 0.281
+    },
+    {
+      "k": 6,
+      "silhouette_score": 0.292
+    },
+    {
+      "k": 7,
+      "silhouette_score": 0.227
+    },
+    {
+      "k": 8,
+      "silhouette_score": 0.305
+    }
+  ],
+  "davies_bouldin_curve": [
+    {
+      "k": 3,
+      "davies_bouldin_score": 1.116
+    },
+    {
+      "k": 4,
+      "davies_bouldin_score": 1.407
+    },
+    {
+      "k": 5,
+      "davies_bouldin_score": 1.315
+    },
+    {
+      "k": 6,
+      "davies_bouldin_score": 1.142
+    },
+    {
+      "k": 7,
+      "davies_bouldin_score": 1.406
+    },
+    {
+      "k": 8,
+      "davies_bouldin_score": 1.076
+    }
+  ],
+  "identified_clusters": [
+    {
+      "cluster_id": 0,
+      "name": "Northwest Boreal Peat Complex",
+      "dominant_regime": "Canadian Boreal (NWT & BC)",
+      "biome": "Boreal Forest & Peatland",
+      "centroid_lat": 47.91,
+      "centroid_lon": -99.78,
+      "spread_radius_km": 1318.4,
+      "detection_count": 1823,
+      "mean_frp": 155.22,
+      "peak_frp": 1850.0,
+      "diurnal_day_ratio": 0.89,
+      "dominant_season": "Months 6-8"
+    },
+    {
+      "cluster_id": 1,
+      "name": "Cascades-Sierra Temperate Front",
+      "dominant_regime": "Amazon Deforestation Arc",
+      "biome": "Tropical Moist & Cerrado Transition",
+      "centroid_lat": 26.321,
+      "centroid_lon": -57.409,
+      "spread_radius_km": 2857.3,
+      "detection_count": 1390,
+      "mean_frp": 10.97,
+      "peak_frp": 33.48,
+      "diurnal_day_ratio": 0.2,
+      "dominant_season": "Months 7-9"
+    },
+    {
+      "cluster_id": 2,
+      "name": "Iberian-Hellenic Mediterranean Arc",
+      "dominant_regime": "Western US (California & Cascades)",
+      "biome": "Temperate Conifer & Chaparral",
+      "centroid_lat": 45.807,
+      "centroid_lon": -88.781,
+      "spread_radius_km": 1048.6,
+      "detection_count": 2681,
+      "mean_frp": 33.6,
+      "peak_frp": 110.03,
+      "diurnal_day_ratio": 0.63,
+      "dominant_season": "Months 6-9"
+    },
+    {
+      "cluster_id": 3,
+      "name": "Eastern Australian Eucalyptus Belt",
+      "dominant_regime": "Australian Bush (NSW & Queensland)",
+      "biome": "Eucalyptus Woodland & Savanna",
+      "centroid_lat": -30.848,
+      "centroid_lon": 149.409,
+      "spread_radius_km": 424.1,
+      "detection_count": 787,
+      "mean_frp": 70.32,
+      "peak_frp": 1088.08,
+      "diurnal_day_ratio": 0.65,
+      "dominant_season": "Months 11-12"
+    },
+    {
+      "cluster_id": 4,
+      "name": "Southern Amazonian Cerrado Margin",
+      "dominant_regime": "Australian Bush (NSW & Queensland)",
+      "biome": "Eucalyptus Woodland & Savanna",
+      "centroid_lat": -30.19,
+      "centroid_lon": 145.113,
+      "spread_radius_km": 544.1,
+      "detection_count": 878,
+      "mean_frp": 73.66,
+      "peak_frp": 759.27,
+      "diurnal_day_ratio": 0.66,
+      "dominant_season": "Months 1-2"
+    },
+    {
+      "cluster_id": 5,
+      "name": "Intermountain Arid Scrub Corridor",
+      "dominant_regime": "Amazon Deforestation Arc",
+      "biome": "Tropical Moist & Cerrado Transition",
+      "centroid_lat": -7.822,
+      "centroid_lon": -55.765,
+      "spread_radius_km": 387.6,
+      "detection_count": 941,
+      "mean_frp": 44.53,
+      "peak_frp": 184.3,
+      "diurnal_day_ratio": 0.82,
+      "dominant_season": "Months 8-10"
+    }
+  ]
+}

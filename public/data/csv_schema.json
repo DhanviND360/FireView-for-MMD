@@ -1,0 +1,127 @@
+{
+  "source_information": {
+    "dataset_title": "NASA FIRMS VIIRS 375m Active Fire Satellite Observation Archive",
+    "provider": "NASA Land, Atmosphere Near real-time Capability for EOS (LANCE) / FIRMS",
+    "instruments": ["Suomi NPP VIIRS", "NOAA-20 VIIRS (JPSS-1)"],
+    "spatial_resolution": "375 m at nadir (nominal)",
+    "temporal_coverage": "January 2023 – December 2024",
+    "full_archive_size": "1.22 GB uncompressed (4,812,490 records)",
+    "file_format": "RFC 4180 Comma-Separated Values (CSV)",
+    "license": "NASA Open Data Policy (Public Domain)",
+    "citation": "Schroeder, W., Oliva, P., Giglio, L., & Csiszar, I. (2014). The New VIIRS 375 m active fire detection data product: Algorithm description and initial assessment. Remote Sensing of Environment, 143, 85-96."
+  },
+  "features": [
+    {
+      "column": "latitude",
+      "type": "float64",
+      "unit": "decimal degrees",
+      "range": "[-90.0, 90.0]",
+      "description": "Center latitude of the active fire pixel referenced to WGS-84 ellipsoid.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "longitude",
+      "type": "float64",
+      "unit": "decimal degrees",
+      "range": "[-180.0, 180.0]",
+      "description": "Center longitude of the active fire pixel referenced to WGS-84 ellipsoid.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "bright_ti4",
+      "type": "float32",
+      "unit": "Kelvin (K)",
+      "range": "[295.0, 367.0]",
+      "description": "VIIRS Band I4 (3.55–3.93 µm) mid-wave infrared brightness temperature of the fire pixel. Saturates at ~367K.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "scan",
+      "type": "float32",
+      "unit": "km",
+      "range": "[0.32, 0.80]",
+      "description": "Along-scan pixel dimension representing spatial footprint widening toward scan edges.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "track",
+      "type": "float32",
+      "unit": "km",
+      "range": "[0.32, 0.70]",
+      "description": "Along-track pixel dimension representing along-orbit satellite footprint.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "acq_date",
+      "type": "date (ISO 8601)",
+      "unit": "YYYY-MM-DD",
+      "range": "[2023-01-01, 2024-12-31]",
+      "description": "Date of satellite sensor observation in Coordinated Universal Time (UTC).",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "acq_time",
+      "type": "time (UTC)",
+      "unit": "HHMM",
+      "range": "[0000, 2359]",
+      "description": "Time of satellite overpass observation in UTC hours and minutes.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "satellite",
+      "type": "categorical",
+      "unit": "code",
+      "range": "{'N': Suomi NPP, '1': NOAA-20}",
+      "description": "Operational polar-orbiting satellite platform that acquired the radiance observation.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "instrument",
+      "type": "string",
+      "unit": "name",
+      "range": "VIIRS",
+      "description": "Visible Infrared Imaging Radiometer Suite sensor identifier.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "confidence",
+      "type": "categorical",
+      "unit": "class",
+      "range": "{'low', 'nominal', 'high'}",
+      "description": "Detection quality flag assigned by contextual temperature thresholding and cloud-mask checks.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "version",
+      "type": "string",
+      "unit": "version tag",
+      "range": "2.0NRT",
+      "description": "NASA FIRMS Near Real-Time processing algorithm version identifier.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "bright_ti5",
+      "type": "float32",
+      "unit": "Kelvin (K)",
+      "range": "[270.0, 335.0]",
+      "description": "VIIRS Band I5 (10.5–12.4 µm) thermal infrared brightness temperature of the observation.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "frp",
+      "type": "float64",
+      "unit": "Megawatts (MW)",
+      "range": "[1.0, 1850.0]",
+      "description": "Fire Radiative Power quantifying the instantaneous rate of radiative heat energy release.",
+      "completeness": "100.0%"
+    },
+    {
+      "column": "daynight",
+      "type": "categorical",
+      "unit": "code",
+      "range": "{'D': Day, 'N': Night}",
+      "description": "Solar illumination flag distinguishing daytime ascending passes from nocturnal descending passes.",
+      "completeness": "100.0%"
+    }
+  ]
+}

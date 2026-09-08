@@ -1,0 +1,100 @@
+{
+  "model_name": "Calibrated Random Forest Spatio-Temporal Classifier",
+  "model_performance": {
+    "roc_auc": 0.842,
+    "precision": 0.785,
+    "recall": 0.675,
+    "f1_score": 0.726,
+    "brier_score": 0.1566,
+    "log_loss": 0.384,
+    "specificity": "85.9%",
+    "threshold": "0.48",
+    "confusion_matrix": {
+      "tp": 204,
+      "tn": 342,
+      "fp": 56,
+      "fn": 98
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "30-Day Precipitation Deficit (VPD)",
+      "importance": 0.447
+    },
+    {
+      "feature": "Recent 7-Day Active Frequency",
+      "importance": 0.192
+    },
+    {
+      "feature": "Root-Zone Soil Moisture Deficit",
+      "importance": 0.156
+    },
+    {
+      "feature": "Ambient 2m Temp Anomaly",
+      "importance": 0.088
+    },
+    {
+      "feature": "10m Surface Wind Velocity",
+      "importance": 0.075
+    },
+    {
+      "feature": "Mean Band I4 Brightness Temp",
+      "importance": 0.043
+    }
+  ],
+  "risk_tiers": [
+    {
+      "tier": "Extreme",
+      "percentage": 3.6,
+      "threshold": "> 80%",
+      "action": "Active Rapid-Spike Alerting"
+    },
+    {
+      "tier": "High",
+      "percentage": 10.8,
+      "threshold": "55% - 80%",
+      "action": "Sub-Daily Orbital Re-analysis"
+    },
+    {
+      "tier": "Moderate",
+      "percentage": 24.2,
+      "threshold": "25% - 55%",
+      "action": "Heightened Satellite Vigilance"
+    },
+    {
+      "tier": "Low",
+      "percentage": 61.4,
+      "threshold": "< 25%",
+      "action": "Baseline Monitoring"
+    }
+  ],
+  "calibration": {
+    "calibration_bins": [
+      {
+        "bin_range": "0.0 - 0.2",
+        "actual_rate": "8.2%",
+        "predicted_mean": "10.8%"
+      },
+      {
+        "bin_range": "0.2 - 0.4",
+        "actual_rate": "24.6%",
+        "predicted_mean": "28.1%"
+      },
+      {
+        "bin_range": "0.4 - 0.6",
+        "actual_rate": "48.2%",
+        "predicted_mean": "49.5%"
+      },
+      {
+        "bin_range": "0.6 - 0.8",
+        "actual_rate": "71.4%",
+        "predicted_mean": "70.2%"
+      },
+      {
+        "bin_range": "0.8 - 1.0",
+        "actual_rate": "92.6%",
+        "predicted_mean": "91.8%"
+      }
+    ]
+  }
+}
